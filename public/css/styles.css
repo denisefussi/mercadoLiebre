@@ -23,29 +23,72 @@ header {
     width: 100%;
 }
 
+.banner{
+    width: 100%;
+}
+
 main {
     width: 90%;
     text-align: center;
     margin: auto;
 }
 
-img {
-    width: 20%;
+main section article{
+    background-color: #fff;
+    margin-bottom: 10px 0px;
+    position: relative;
+    border-radius: 5px;
+    padding-top: 15px;
 }
 
-main article{
-    margin-bottom: 10px;
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+footer h4 {
+    font-size: 12px;
+    padding: 10px;
 }
 
 /* HEADER STYLES */
 .header-logo {
-    width: 45%;
+    width: 50%;
+    padding: 10px;
 }
 
 .header-title {
     text-align: center;
     font-size: 12px;
     font-weight: lighter;
+}
+
+header .form {
+    display: flex;
+    width: 50%;
+}
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
 }
 
 li a {
@@ -71,8 +114,13 @@ li a {
 }
 
 /* MAIN STYLES */
+
 .main-section-title {
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #666;
+    margin-top: 20px;
+    text-align: left;
 }
 
 .align-article{
@@ -82,25 +130,36 @@ li a {
 }
 
 .main-img {
-    width: 30%;
-}
-
-.description {
-    border-top: solid 1px #EBEBEB;
-    padding: 15px;
-}
-
-.price-article {
-    font-size: 10px;
-    text-align: center;
-}
-
-.discount-article {
-    font-size: 16px;
-    text-align: center;
+    width: 100%;
 }
 
 .description-article {
+    width: 100%;
+    border-top: solid 1px #EBEBEB;
+    padding: 15px;
+    position: relative;
+}
+
+.price-box {
+    display: flex;
+
+}
+
+.price {
+    font-size: 18spx;
+    text-align: center;
+    width: 30%;
+    padding-right: 10px;
+}
+
+.discount {
+    font-size: 16px;
+    text-align: center;
+    color: #39b54a;
+    width: 70%;
+}
+
+.description {
     font-size: 16px;
     text-align: center;
 }
@@ -117,4 +176,36 @@ li a {
 footer h3, p{
     width: 100%;
     text-align: center;
+    font-size: 12px;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40vw;
+    }
+    
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 769px){
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20vw;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
