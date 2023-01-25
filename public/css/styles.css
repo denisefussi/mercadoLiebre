@@ -103,7 +103,6 @@ li a {
     border-radius: 6px;
     margin: 0 auto;
     background-color:#1259c3;
-    padding: auto;
 }
 
 .fa-bars{
@@ -195,6 +194,13 @@ footer h3, p{
         justify-content: space-around;
     }
 
+    .general-info {
+        display: none;
+    } 
+    .user-info {
+        display: none;
+    }
+
 }
 
 @media (min-width: 769px){
@@ -208,4 +214,8 @@ footer h3, p{
         display: flex;
         flex-wrap: wrap;
     }
+
+    .burger-menu{
+        display: none;
+    } 
 }
